@@ -363,12 +363,19 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-l-\[8px\] {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 8px;
+  }
   .border-dashed {
     --tw-border-style: dashed;
     border-style: dashed;
   }
   .border-\[\#061B3A\] {
     border-color: #061B3A;
+  }
+  .border-\[\#FF2424\] {
+    border-color: #FF2424;
   }
   .border-\[black\] {
     border-color: black;
@@ -795,6 +802,11 @@
   .lg\:p-\[100px_0px\] {
     @media (width >= 64rem) {
       padding: 100px 0px;
+    }
+  }
+  .lg\:pr-\[30px\] {
+    @media (width >= 64rem) {
+      padding-right: 30px;
     }
   }
   .lg\:pr-\[150px\] {
