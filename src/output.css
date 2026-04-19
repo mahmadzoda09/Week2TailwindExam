@@ -7,12 +7,15 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-black: 900;
+    --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -244,6 +247,9 @@
   .gap-\[25px\] {
     gap: 25px;
   }
+  .gap-\[28px\] {
+    gap: 28px;
+  }
   .gap-\[30px\] {
     gap: 30px;
   }
@@ -271,6 +277,9 @@
   .rounded-\[50px\] {
     border-radius: 50px;
   }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
   .rounded-bl-none {
     border-bottom-left-radius: 0;
   }
@@ -278,9 +287,17 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
   .border-\[2px\] {
     border-style: var(--tw-border-style);
     border-width: 2px;
+  }
+  .border-dashed {
+    --tw-border-style: dashed;
+    border-style: dashed;
   }
   .border-\[\#061B3A\] {
     border-color: #061B3A;
@@ -290,6 +307,9 @@
   }
   .border-\[lightgray\] {
     border-color: lightgray;
+  }
+  .border-gray-400 {
+    border-color: var(--color-gray-400);
   }
   .bg-\[\#061B3A\] {
     background-color: #061B3A;
@@ -315,6 +335,9 @@
   .p-\[3px_15px\] {
     padding: 3px 15px;
   }
+  .p-\[7px_20px\] {
+    padding: 7px 20px;
+  }
   .p-\[10px_15px\] {
     padding: 10px 15px;
   }
@@ -323,6 +346,9 @@
   }
   .p-\[20px\] {
     padding: 20px;
+  }
+  .p-\[30px_10px\] {
+    padding: 30px 10px;
   }
   .p-\[30px_10px_30px_30px\] {
     padding: 30px 10px 30px 30px;
@@ -406,6 +432,9 @@
   .text-\[\#1E1E1E\] {
     color: #1E1E1E;
   }
+  .text-\[\#9BA4B0\] {
+    color: #9BA4B0;
+  }
   .text-\[\#061B3A\] {
     color: #061B3A;
   }
@@ -427,6 +456,9 @@
   .text-\[white\] {
     color: white;
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -435,6 +467,10 @@
   }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_10px_lightgray\] {
+    --tw-shadow: 0 0 10px var(--tw-shadow-color, lightgray);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
@@ -486,6 +522,16 @@
       width: 25%;
     }
   }
+  .lg\:w-\[200px\] {
+    @media (width >= 64rem) {
+      width: 200px;
+    }
+  }
+  .lg\:w-\[230px\] {
+    @media (width >= 64rem) {
+      width: 230px;
+    }
+  }
   .lg\:w-\[250px\] {
     @media (width >= 64rem) {
       width: 250px;
@@ -499,6 +545,21 @@
   .lg\:w-\[350px\] {
     @media (width >= 64rem) {
       width: 350px;
+    }
+  }
+  .lg\:w-\[470px\] {
+    @media (width >= 64rem) {
+      width: 470px;
+    }
+  }
+  .lg\:w-\[500px\] {
+    @media (width >= 64rem) {
+      width: 500px;
+    }
+  }
+  .lg\:w-\[550px\] {
+    @media (width >= 64rem) {
+      width: 550px;
     }
   }
   .lg\:flex-row {
@@ -526,6 +587,11 @@
       justify-content: flex-start;
     }
   }
+  .lg\:gap-\[130px\] {
+    @media (width >= 64rem) {
+      gap: 130px;
+    }
+  }
   .lg\:gap-\[150px\] {
     @media (width >= 64rem) {
       gap: 150px;
@@ -541,6 +607,11 @@
       border-radius: 10px 0px 0px 10px;
     }
   }
+  .lg\:p-\[100px_0\] {
+    @media (width >= 64rem) {
+      padding: 100px 0;
+    }
+  }
   .lg\:p-\[100px_0px\] {
     @media (width >= 64rem) {
       padding: 100px 0px;
@@ -549,6 +620,11 @@
   .lg\:pr-\[150px\] {
     @media (width >= 64rem) {
       padding-right: 150px;
+    }
+  }
+  .lg\:text-\[16px\] {
+    @media (width >= 64rem) {
+      font-size: 16px;
     }
   }
   .lg\:text-\[20px\] {
