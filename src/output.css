@@ -247,6 +247,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .gap-\[5px\] {
     gap: 5px;
   }
@@ -332,6 +335,9 @@
   .bg-\[\#071C3B\] {
     background-color: #071C3B;
   }
+  .bg-\[\#7696C6\] {
+    background-color: #7696C6;
+  }
   .bg-\[\#AACCFF\] {
     background-color: #AACCFF;
   }
@@ -343,6 +349,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .p-\[2px_10px\] {
+    padding: 2px 10px;
   }
   .p-\[3px_12px\] {
     padding: 3px 12px;
@@ -406,6 +415,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-end {
+    text-align: end;
   }
   .text-\[12px\] {
     font-size: 12px;
@@ -591,6 +603,11 @@
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
+    }
+  }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
     }
   }
   .lg\:items-start {
