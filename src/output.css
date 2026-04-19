@@ -209,6 +209,9 @@
   .mb-\[40px\] {
     margin-bottom: 40px;
   }
+  .ml-\[20px\] {
+    margin-left: 20px;
+  }
   .flex {
     display: flex;
   }
@@ -533,6 +536,9 @@
   .pr-\[150px\] {
     padding-right: 150px;
   }
+  .pb-\[10px\] {
+    padding-bottom: 10px;
+  }
   .pl-\[30px\] {
     padding-left: 30px;
   }
@@ -651,6 +657,10 @@
   .underline {
     text-decoration-line: underline;
   }
+  .shadow {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -743,14 +753,29 @@
       width: 230px;
     }
   }
+  .lg\:w-\[240px\] {
+    @media (width >= 64rem) {
+      width: 240px;
+    }
+  }
   .lg\:w-\[250px\] {
     @media (width >= 64rem) {
       width: 250px;
     }
   }
+  .lg\:w-\[260px\] {
+    @media (width >= 64rem) {
+      width: 260px;
+    }
+  }
   .lg\:w-\[300px\] {
     @media (width >= 64rem) {
       width: 300px;
+    }
+  }
+  .lg\:w-\[340px\] {
+    @media (width >= 64rem) {
+      width: 340px;
     }
   }
   .lg\:w-\[350px\] {
@@ -876,6 +901,16 @@
   .lg\:pr-\[150px\] {
     @media (width >= 64rem) {
       padding-right: 150px;
+    }
+  }
+  .lg\:text-\[12px\] {
+    @media (width >= 64rem) {
+      font-size: 12px;
+    }
+  }
+  .lg\:text-\[14px\] {
+    @media (width >= 64rem) {
+      font-size: 14px;
     }
   }
   .lg\:text-\[16px\] {
