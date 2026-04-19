@@ -752,6 +752,11 @@
       justify-content: flex-start;
     }
   }
+  .lg\:gap-\[20px\] {
+    @media (width >= 64rem) {
+      gap: 20px;
+    }
+  }
   .lg\:gap-\[130px\] {
     @media (width >= 64rem) {
       gap: 130px;
